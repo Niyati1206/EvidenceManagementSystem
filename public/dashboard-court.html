@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Dashboard - Evidence Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ipfs-http-client/dist/index.min.js"></script>
+
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Evidence Management System</h1>
+            <div class="user-info">
+                <span id="user-name">Court Official Name</span>
+                <span id="user-role">Court</span>
+                <button id="logout-btn" class="btn">Logout</button>
+            </div>
+        </header>
+        
+        <div class="dashboard-content">
+            <div class="sidebar">
+                <button id="verify-evidence-nav" class="nav-btn active">Verify Evidence</button>
+                <button id="browse-evidence-nav" class="nav-btn">Browse Evidence</button>
+            </div>
+            
+            <div class="main-content">
+                <div id="verify-evidence-section" class="dashboard-section">
+                    <h2>Verify Evidence</h2>
+                    <div class="verification-form">
+                        <div class="form-group">
+                            <label for="verify-evidence-id">Evidence ID:</label>
+                            <input type="text" id="verify-evidence-id" placeholder="Enter evidence ID to verify">
+                        </div>
+                        <div class="form-actions">
+                            <button id="verify-btn" class="btn primary-btn">Verify</button>
+                        </div>
+                    </div>
+                    
+                    <div id="verification-result" class="verification-result hidden">
+                        <h3>Verification Result</h3>
+                        <div class="evidence-details">
+                            <div class="detail-item">
+                                <span class="label">Evidence ID:</span>
+                                <span id="result-id" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Case Number:</span>
+                                <span id="result-case" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Location:</span>
+                                <span id="result-location" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Crime Description:</span>
+                                <span id="result-description" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Evidence Type:</span>
+                                <span id="result-type" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Uploaded By:</span>
+                                <span id="result-officer" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Timestamp:</span>
+                                <span id="result-timestamp" class="value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Blockchain Status:</span>
+                                <span id="result-status" class="value verification-status"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="evidence-preview" id="evidence-preview">
+                            <!-- Preview will be added here -->
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button id="download-evidence" class="btn success-btn">Download Evidence</button>
+                        </div>
+                    </div>
+                    
+                    <div id="verification-message" class="message"></div>
+                </div>
+                
+                <div id="browse-evidence-section" class="dashboard-section hidden">
+                    <h2>Browse Evidence Records</h2>
+                    <div class="filter-controls">
+                        <input type="text" id="search-evidence" placeholder="Search by case number, location, etc.">
+                        <select id="filter-evidence-type">
+                            <option value="">All Types</option>
+                            <option value="Audio">Audio</option>
+                            <option value="Video">Video</option>
+                            <option value="Document">Document</option>
+                            <option value="Image">Image</option>
+                            <option value="Physical">Physical</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="evidence-list" id="evidence-list">
+                        <!-- Evidence items will be added dynamically here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs-http-client@56.0.1/dist/index.min.js"></script>
+    <script src="config.js"></script>
+    <script src="court-dashboard.js"></script>
+    
+</body>
+</html>

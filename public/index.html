@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Evidence Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ipfs-http-client/dist/index.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <h1>Blockchain Evidence Management</h1>
+            <div class="tabs">
+                <button class="tab-btn active" id="login-tab">Login</button>
+                <button class="tab-btn" id="register-tab">Register</button>
+            </div>
+            
+            <div class="form-container" id="login-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="login-address">Ethereum Address:</label>
+                    <input type="text" id="login-address" placeholder="Your Ethereum address" readonly>
+                </div>
+                <div class="form-group">
+                    <button id="connect-metamask" class="btn primary-btn">Connect with MetaMask</button>
+                </div>
+                <div class="form-group">
+                    <button id="login-btn" class="btn success-btn" disabled>Login</button>
+                </div>
+                <div id="login-message" class="message"></div>
+            </div>
+            
+            <div class="form-container hidden" id="register-form">
+                <h2>Register</h2>
+                <div class="form-group">
+                    <label for="register-address">Ethereum Address:</label>
+                    <input type="text" id="register-address" placeholder="Your Ethereum address" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role">
+                        <option value="">Select Role</option>
+                        <option value="Police">Police</option>
+                        <option value="Court">Court</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="register-connect-metamask" class="btn primary-btn">Connect with MetaMask</button>
+                </div>
+                <div class="form-group">
+                    <button id="register-btn" class="btn success-btn" disabled>Register</button>
+                </div>
+                <div id="register-message" class="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
