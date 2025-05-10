@@ -84,7 +84,8 @@ Then open in your browser:
 
   ---
 
-![Screenshot 2025-05-07 132930](https://github.com/user-attachments/assets/238733ab-383f-477b-bd04-e4427e907ecb)
+![image](https://github.com/user-attachments/assets/6b597f55-ab4a-4303-adb2-8a33b7f78839)
+
 
 
 
