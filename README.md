@@ -47,11 +47,47 @@ npm install
 - Generate a new key and copy:
   PINATA_API_KEY
   PINATA_SECRET_API_KEY
-- Add the pinata key to court-dashboard.js file :
+- Create a config.js file and add your pinata key as follows:
   ```bash
-  const YOUR_INFURA_PROJECT_ID=' ';
-  const YOUR_INFURA_PROJECT_SECRET =' ';
+  var config = {
+  PINATA_API_KEY: 'put_your_key_here',
+  PINATA_SECRET_API_KEY: 'put_your_secret_key_here'
+  };
   ```
+
+#Start Ganache (Local Blockchain)
+ - Open the Ganache app
+ - Create a new workspace and add the truffle-config.js file to it
+ - Note the RPC server URL (usually http://127.0.0.1:7545)
+
+#Compile and Deploy Smart Contracts
+```bash
+truffle compile
+truffle migrate --reset
+```
+- Copy the contract address from the "EvidenceManagement" contract and paste it into 
+1. app.js (line number 7)
+2. court-dashboard.js (line number 7)
+3. police-dashboard.js (line number 7)
+- Also update the ABI in frontend of all three js files
+
+#Run the frontend
+```bash
+npx http-server ./public
+```
+Then open in your browser:
+📍``` http://localhost:8080```
+
+![Screenshot 2025-05-07 132930](https://github.com/user-attachments/assets/238733ab-383f-477b-bd04-e4427e907ecb)
+
+
+
+
+
+
+
+  
+  
   
 
 
