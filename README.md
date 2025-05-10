@@ -50,8 +50,8 @@ npm install
 - Create a config.js file and add your pinata key as follows:
   ```bash
   var config = {
-  PINATA_API_KEY: 'put_your_key_here',
-  PINATA_SECRET_API_KEY: 'put_your_secret_key_here'
+  PINATA_API_KEY: 'add_your_key_here',
+  PINATA_SECRET_API_KEY: 'add_your_secret_key_here'
   };
   ```
 
