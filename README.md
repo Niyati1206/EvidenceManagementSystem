@@ -81,6 +81,9 @@ Then open in your browser:
 # 7. Set up metamask
 - Configure the network and set up a local network
 - Add atleast 2 accounts (For Police and Court) to the metamask wallet using the private key from Ganache accounts
+
+  ---
+
 ![Screenshot 2025-05-07 132930](https://github.com/user-attachments/assets/238733ab-383f-477b-bd04-e4427e907ecb)
 
 
