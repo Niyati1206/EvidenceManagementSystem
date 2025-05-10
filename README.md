@@ -30,17 +30,17 @@ Install the following tools:
 - MetaMask
 - Pinata Account
 
-# Clone the Repository
+# 1. Clone the Repository
 ```bash
 git clone https://github.com/Niyati1206/EvidenceManagementSystem.git
 cd EvidenceManagementSystem
 ```
 
-# Install Dependencies
+# 2. Install Dependencies
 ```bash
 npm install
 ```
-#Setup Pinata for IPFS Uploads
+# 3. Setup Pinata for IPFS Uploads
 - Go to https://www.pinata.cloud/
 - Sign up and verify your email
 - Go to your API Keys dashboard
@@ -55,12 +55,12 @@ npm install
   };
   ```
 
-#Start Ganache (Local Blockchain)
+# 4. Start Ganache (Local Blockchain)
  - Open the Ganache app
  - Create a new workspace and add the truffle-config.js file to it
  - Note the RPC server URL (usually http://127.0.0.1:7545)
 
-#Compile and Deploy Smart Contracts
+# 5. Compile and Deploy Smart Contracts
 ```bash
 truffle compile
 truffle migrate --reset
@@ -71,7 +71,7 @@ truffle migrate --reset
 3. police-dashboard.js (line number 7)
 - Also update the ABI in frontend of all three js files
 
-#Run the frontend
+# 6. Run the frontend
 ```bash
 npx http-server ./public
 ```
