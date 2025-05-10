@@ -25,4 +25,33 @@ Install the following tools:
 - [Truffle](https://trufflesuite.com/)
   ```bash
   npm install -g truffle
+  ```
+- Ganache
+- MetaMask
+- Pinata Account
+
+# Clone the Repository
+```bash
+git clone https://github.com/Niyati1206/EvidenceManagementSystem.git
+cd EvidenceManagementSystem
 ```
+
+# Install Dependencies
+```bash
+npm install
+```
+#Setup Pinata for IPFS Uploads
+- Go to https://www.pinata.cloud/
+- Sign up and verify your email
+- Go to your API Keys dashboard
+- Generate a new key and copy:
+  PINATA_API_KEY
+  PINATA_SECRET_API_KEY
+- Add the pinata key to court-dashboard.js file :
+  ```bash
+  const YOUR_INFURA_PROJECT_ID=' ';
+  const YOUR_INFURA_PROJECT_SECRET =' ';
+  ```
+  
+
+
