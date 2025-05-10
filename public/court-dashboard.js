@@ -1,11 +1,11 @@
 // Initialize web3 and IPFS
-//import CONTRACT_ABI from './ContractABI'; // Adjust the path as necessary
+// Adjust the path as necessary
 let web3;
 let contract;
 let ipfs;
 let userAccount;
 let userData;
-const contractAddress = '0xB68F37aafFa2cE886B03DfBda7bBD45758AaB468';
+const contractAddress = '0xcB3aa91e8f2e5b2AbD82C9239AE7f3bFfBBD4fc8';
 const CONTRACT_ABI = [
   {
     "anonymous": false,
@@ -420,8 +420,7 @@ const downloadEvidenceBtn = document.getElementById('download-evidence');
 const evidenceList = document.getElementById('evidence-list');
 const searchEvidence = document.getElementById('search-evidence');
 const filterEvidenceType = document.getElementById('filter-evidence-type');
-const YOUR_INFURA_PROJECT_ID='a0569fb4068944bfa4eef3e6afc421fb';
-const YOUR_INFURA_PROJECT_SECRET ='spUOgSycnzpzcuv4Y3usWfCyNDPSYySTUmBfQ0Bllm+eokzeAvWd9w';
+
 
 function initializeIPFS() {
   // We don't need to initialize an IPFS client when using Pinata's REST API
@@ -437,8 +436,6 @@ function initializeIPFS() {
 }
 // Add these constants at the top of your file with your other constants
 // This happens during build time, not runtime
-//const YOUR_PINATA_API_KEY = 'e0296da6394debe0ef41'; // Replace with your actual Pinata API key
-//const YOUR_PINATA_SECRET_API_KEY = 'ffebb1c559ee55314a6e640e2e68a38211021908d1c17379ff2b1af37e675e49'; 
 const YOUR_PINATA_API_KEY = config.PINATA_API_KEY;
 const YOUR_PINATA_SECRET_API_KEY = config.PINATA_SECRET_API_KEY;
 // Event Listeners

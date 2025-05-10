@@ -671,7 +671,7 @@
   "sourceMap": "60:370:1:-:0;;;87:33;;;-1:-1:-1;;;;;;87:33:1;110:10;87:33;;;60:370;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "60:370:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;;;;;;;160:25:2;;;148:2;133:18;127:36:1;;;;;;;;87:33;;;;;-1:-1:-1;;;;;87:33:1;;;;;;-1:-1:-1;;;;;360:32:2;;;342:51;;330:2;315:18;87:33:1;196:203:2;316:111:1;;;;;;:::i;:::-;;:::i;:::-;;;227:5;;-1:-1:-1;;;;;227:5:1;213:10;:19;205:83;;;;-1:-1:-1;;;205:83:1;;791:2:2;205:83:1;;;773:21:2;830:2;810:18;;;803:30;869:34;849:18;;;842:62;-1:-1:-1;;;920:18:2;;;913:49;979:19;;205:83:1;;;;;;;;383:24:::1;:36:::0;316:111::o;404:180:2:-;463:6;516:2;504:9;495:7;491:23;487:32;484:52;;;532:1;529;522:12;484:52;-1:-1:-1;555:23:2;;404:180;-1:-1:-1;404:180:2:o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Migrations {\r\n    address public owner = msg.sender;\r\n    uint public last_completed_migration;\r\n\r\n    modifier restricted() {\r\n        require(msg.sender == owner, \"This function is restricted to the contract's owner\");\r\n        _;\r\n    }\r\n\r\n    function setCompleted(uint completed) public restricted {\r\n        last_completed_migration = completed;\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\Niyati\\Desktop\\BLC-TRY\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\Niyati\\Desktop\\BLC-Project-EMS\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1074,12 +1074,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xeFCceaAaE170F5d5969458945951999be29E873D",
-      "transactionHash": "0xdc40c3bb7f6617215d0dda8e506ca85e8fa80da286515eb1d761786df864c977"
+      "address": "0x289d2EF8f654Ef7F87C6d150e7fA6Ff733872472",
+      "transactionHash": "0xfca299ae09c3f7ecc5bf4136139d65f82fac32465f80a7bc4e603be06830d70f"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2025-04-27T04:01:28.375Z",
+  "updatedAt": "2025-05-10T08:08:46.865Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

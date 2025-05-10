@@ -4,7 +4,7 @@ let contract;
 let userAccount;
 
 //import CONTRACT_ABI from './ContractABI'; // Adjust the path as necessary
-const contractAddress = '0xB68F37aafFa2cE886B03DfBda7bBD45758AaB468';
+const contractAddress = '0xcB3aa91e8f2e5b2AbD82C9239AE7f3bFfBBD4fc8';
 const CONTRACT_ABI = [
   {
     "anonymous": false,
@@ -417,6 +417,7 @@ const loginAddress = document.getElementById('login-address');
 const registerAddress = document.getElementById('register-address');
 const fullnameInput = document.getElementById('fullname');
 const roleSelect = document.getElementById('role');
+
 
 // Event Listeners
 window.addEventListener('load', async () => {
